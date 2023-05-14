@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+ 
+<body>
+    <div class="game-container">
+        <div class="title-container">
+            <button id="restart" class="butn"><i class="fa fa-repeat" style="font-size:36px"></i><span>neustart</span></button>
+            <h1 style="flex-grow: 1">Wordle<br>GER</h1>
+            <button id="help" class="butn"><i class="fa fa-info-circle" style="font-size:36px"></i><span>info</span></button>
+        </div>
+        <div class="message-container"></div>
+        <div class="tile-container"></div>
+        <div class="key-container"></div>
+    </div>
+
+    <div id="infodialog" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Spielregeln</h2>
+            </div>
+            <div class="modal-body">
+            <p>Nehmen Sie als Erstes ein Wort mit fünf Buchstaben. Am besten eines, in dem sich kein Buchstabe doppelt - 
+                sonst verlieren Sie die Information über einen möglichen Buchstaben.</p>
+            <p>Die Buchstaben, die nicht im Wordle enthalten sind, sind grau.</p>
+            <p>Buchstaben, die Sie richtig raten, sind entweder gelb oder grün. Grün sind sie, wenn sie auch an der richtigen Stelle sind.</p>
+            <p>Sehen Sie einen gelben Buchstaben, kommt er im Wort vor, aber an einer anderen Position.</p>
+            <p>Schauen Sie unten auf die Tastatur für 
+                einen besseren Überblick. Hier markieren Farben ebenfalls die Buchstaben. Schauen Sie sich die noch nicht verwendeten Buchstaben an, 
+                um Wörter zu bilden.</p>
+            <p>Die Suchbegriffe entstammen dem DWDSWB-Wörterbuch von www.woerterbuchnetz.de</p>
+            </div>
+        </div>
+        
+        </div>
+
+    <script src="app.js"></script>
+</body>
+ 
+</html>
